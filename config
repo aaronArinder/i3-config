@@ -29,10 +29,10 @@ font pango:monospace 8
 
 
 # Border style
-#new_window pixel 1
-#new_float normal
-#hide_edge_borders none
-#for_window [class="^.*"] border pixel 0
+new_window pixel 1
+new_float normal
+hide_edge_borders none
+for_window [class="^.*"] border pixel 5
 #gaps inner 15
 #gaps outer 15
 
@@ -211,3 +211,8 @@ bar {
 exec --no-startup-id /usr/lib/gnome-settings-daemon/gnome-settings-daemon
 # i3lock config
 #exec --no-startup-id xautolock -time 10 -locker 'i3lock -d -c 000000'
+
+# compton gives us them transparencies, grrrl
+exec --no-startup-id compton
+# feh to set background image
+exec --no-startup-id feh --randomize --bg-center ~/wallpapers
