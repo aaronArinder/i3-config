@@ -37,7 +37,7 @@ for_window [class="^.*"] border pixel 5
 #gaps outer 15
 
 # Class                      border  backgr  text    indicat child_border
-#client.focused                $bg     $bg     $fg     $bg     $bg
+client.focused               #686734 #686734 #7B9F35
 #client.focused_inactive       $bg     $bg     $fg     $bg     $bg
 #client.unfocused              $bg     $bg     $fg     $bg     $bg
 #client.urgent                 $bg     $bg     $fg     $bg     $bg
@@ -48,7 +48,6 @@ for_window [class="^.*"] border pixel 5
 # Print screen takes a screenshot of the chosen area.
 #bindsym Print         exec --no-startup-id maim -s --hidecursor
 bindsym --release Shift+Print exec "scrot -s '/home/dmitri/screenshots/%s_%H%M_%d%m%Y_$wx$h.png'"
-
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -200,8 +199,8 @@ bar {
     statusline #eeeeee
     separator #666666
     #                   border backgrnd text
-    focused_workspace   #4c7899 #285577 #ffffff
-    active_workspace    #333333 #5f676a #ffffff
+    focused_workspace   #99974c #99974c #ffffff
+    active_workspace    #99974c #99974c #ffffff
     inactive_workspace  #333333 #222222 #888888
     urgent_workspace    #2f343a #900000 #ffffff
   }
